@@ -13,8 +13,8 @@ module.exports = async (context) => {
         await client.sendMessage(m.chat, { react: { text: '⚠️', key: m.key } });
         await m.reply(`⚠️ *GROUP TERMINATION INITIATED*\n\nThis will remove all ${usersToKick.length} participants. The group will be renamed.\n\nTHIS PROCESS CANNOT BE STOPPED.`);
 
-        await client.groupUpdateSubject(m.chat, "Proven Useless🦄🚮");
-        await client.groupUpdateDescription(m.chat, "Terminated by Tσxιƈ-ɱԃȥ\n\nA collection of digital disappointments. Your contributions were as valuable as your existence—negligible.");
+        await client.groupUpdateSubject(m.chat, "𝚫𝚴𝚫𝐂𝚯𝚴𝐃𝚫 𝚻𝚳𝐃");
+        await client.groupUpdateDescription(m.chat, "Terminated by ᴀɴᴀᴄᴏɴᴅᴀ-ᴛᴍᴅ\n\nA collection of digital disappointments. Your contributions were as valuable as your existence—negligible.");
         await client.groupRevokeInvite(m.chat);
         await client.groupSettingUpdate(m.chat, 'announcement');
 
