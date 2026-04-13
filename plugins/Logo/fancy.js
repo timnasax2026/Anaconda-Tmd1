@@ -49,7 +49,7 @@ module.exports = {
     const { client, m, text, prefix } = context;
 
     if (!text) {
-      let preview = `╭━━━━━━━━━━━━━━━━━━\n│❒ *Fancy Text Generator*\n│❒ Usage: ${prefix}fancy <number> <your text>\n│❒ Example: \( {prefix}fancy 1 Toxic-MD\n│\n│ Available styles (1- \){Object.keys(fancyStyles).length}):\n`;
+      let preview = `╭━━━━━━━━━━━━━━━━━━\n│❒ *Fancy Text Generator*\n│❒ Usage: ${prefix}fancy <number> <your text>\n│❒ Example: \( {prefix}fancy 1 ᴀɴᴀᴄᴏɴᴅᴀ-ᴛᴍᴅ\n│\n│ Available styles (1- \){Object.keys(fancyStyles).length}):\n`;
 
       const example = 'Timnasa';
       for (let i = 1; i <= Object.keys(fancyStyles).length; i++) {
@@ -67,7 +67,7 @@ module.exports = {
 
     if (isNaN(styleNum) || styleNum < 1 || styleNum > Object.keys(fancyStyles).length) {
       return client.sendMessage(m.chat, {
-        text: `╭━━━━━━━━━━━━━━━━━━\n│❒ Invalid style number!\n│❒ Use 1-${Object.keys(fancyStyles).length}\n│❒ Example: ${prefix}fancy 1 ankonda-tmd\n╰━━━━━━━━━━━━━━━━━━`
+        text: `╭━━━━━━━━━━━━━━━━━━\n│❒ Invalid style number!\n│❒ Use 1-${Object.keys(fancyStyles).length}\n│❒ Example: ${prefix}fancy 1 anaconda-tmd\n╰━━━━━━━━━━━━━━━━━━`
       }, { quoted: m });
     }
 
